@@ -10,4 +10,4 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Install Packages needed for Personal use
-dnf5 install -y make cmake clang bison dbus-devel flex kernel-devel kernel-headers gcc make patch autoconf
+dnf5 install -y make cmake clang bison dbus-devel flex gcc make patch autoconf
