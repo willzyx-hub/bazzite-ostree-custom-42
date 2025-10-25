@@ -19,7 +19,7 @@ dnf5 remove -y kernel-core kernel-modules kernel-modules-extra || true
 echo "Installing kernel version ${KERNEL_VERSION}..."
 
 # Install specific kernel update version
-dnf5 install -y kernel-core-${KERNEL_VERSION} kernel-modules-${KERNEL_VERSION} kernel-modules-extra-${KERNEL_VERSION}
+dnf5 install -y kernel-headers-${KERNEL_VERSION} kernel-devel-${KERNEL_VERSION} kernel-core-${KERNEL_VERSION} kernel-modules-${KERNEL_VERSION} kernel-modules-extra-${KERNEL_VERSION}
 
 # Lock kernel update for future builds
 echo "exclude=kernel* kernel-core* kernel-modules* kernel-modules-extra*" >> /etc/dnf/dnf.conf

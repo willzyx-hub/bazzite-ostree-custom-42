@@ -10,11 +10,4 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Install Packages needed for Personal use
-# dnf5 install -y make cmake clang bison dbus-devel flex glibc-devel.i686 fuse-devel \
-# systemd-devel elfutils-libelf-devel cairo-devel freetype-devel.{x86_64,i686} \
-# libjpeg-turbo-devel.{x86_64,i686} fontconfig-devel.{x86_64,i686} libglvnd-devel.{x86_64,i686} \
-# mesa-libGL-devel.{x86_64,i686} mesa-libEGL-devel.{x86_64,i686} mesa-libGLU-devel.{x86_64,i686} \
-# libtiff-devel.{x86_64,i686} libxml2-devel libbsd-devel git git-lfs libXcursor-devel \
-# libXrandr-devel giflib-devel pulseaudio-libs-devel libxkbfile-devel \
-# openssl-devel llvm libcap-devel libavcodec-free-devel libavformat-free-devel
-# Disabled for now
+dnf5 install -y make cmake clang bison dbus-devel flex kernel-devel kernel-headers gcc make patch autoconf
